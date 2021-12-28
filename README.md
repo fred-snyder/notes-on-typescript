@@ -17,6 +17,7 @@ These notes are compiled from various sources. Thanks to all the great teachers 
 
 [TypeScript Setup With Node & Express](https://www.youtube.com/watch?v=zRo2tvQpus8)
 
+[The Net Ninja - TypeScript Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI)
 
 ### Useful written resources
 
