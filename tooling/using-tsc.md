@@ -20,15 +20,22 @@ https://www.typescriptlang.org/tsconfig
 ```json
 {
     "compilerOptions": {
-        // the location of the .ts source files
+        // specify the version of the compiled JS
+        "target": "es5",
+
+        // generate sourcemaps for debugging in developer tools
+        "sourcemap": true,
+
+        // set the location of the .ts source files
         "rootDir": "./",
         "rootDir": "./source",
         "rootDir": "./language/source",
 
-        // specify multiple root dirs
+        // you can specify multiple root dirs
         "rootDirs": [],
 
-        // where TSC outputs the compiled files
+        // set where TSC outputs the compiled files
+        // note: the folder structure inside the rootDir is also included
         "outDir": "./",
         "outDir": "./dist",
         "outDir": "./language/dist",
