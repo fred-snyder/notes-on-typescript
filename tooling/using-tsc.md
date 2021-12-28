@@ -11,14 +11,27 @@ tsc --watch
 tsc --init
 ```
 
-# tsconfig.json
+## tsconfig.json
 
 These config values are probably settings you'd want to update according to your needs.
 
+https://www.typescriptlang.org/tsconfig
+
 ```json
-// "rootDir": "./"
-"rootDir": "./source"
-// "rootDirs": []
-// "outDir": "./"
-"outDir": "./dist"
+{
+    "compilerOptions": {
+        // "rootDir": "./"
+        "rootDir": "./source",
+        // "rootDir": "./language/source",
+
+        // "rootDirs": []
+
+        // "outDir": "./"
+        "outDir": "./dist"
+        // "outDir": "./language/dist",
+    },
+    // explicitly include and exclude folders
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}
 ```
