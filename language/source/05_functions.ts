@@ -39,6 +39,16 @@ function logNumberStrict(num: number): void {
     console.log(num);
 }
 
+function returnNumber(test: boolean): number {
+    if (test) {
+        return 1;
+    } else {
+        // an else statement containing a return value
+        // is needed satisfy the return signature
+        return 0;
+    }
+}
+
 //! important side-note: the TS type-checking only runs in development.
 // so if there is a possibility that during execution
 // a non-number type is passed as input
