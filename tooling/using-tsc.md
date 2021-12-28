@@ -35,6 +35,9 @@ https://www.typescriptlang.org/tsconfig
     },
     // explicitly include and exclude folders
     "include": ["src/**/*"],
-    "exclude": ["node_modules"] // node_modules is excluded by default
+    "exclude": ["node_modules"],
+    // node_modules is excluded by default
+    // but if you set the exclude property
+    // you have to exclude node_modules
 }
 ```
