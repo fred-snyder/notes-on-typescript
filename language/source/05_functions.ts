@@ -7,13 +7,27 @@ function nameAge(name: string, age: number): string {
 
 nameAge('Fred', 36);
 
-// string or number as parameter, and no return value
-function logNumber(number: string | number): void {
+// string or number as parameter
+// plus an OPTIONAL parameter
+// and explicitly tell TS that the function has no return value
+function logNumber(number: string | number, text?: string): void {
+    console.log('Optional argument is:', text);
     console.log(number);
 }
 
 logNumber(100);
 logNumber('100');
+
+// setting a default parameter value automatically makes that parameter optional
+function logSomethingElse(
+    number: string,
+    text: string = 'Default optional text'
+): void {
+    console.log(text);
+    console.log(number);
+}
+
+logSomethingElse('100');
 
 // in JS you harden functions at runtime: check type and throw exception, however
 // in TS you just have to make sure that all variables in your code
