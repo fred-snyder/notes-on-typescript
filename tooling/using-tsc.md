@@ -20,18 +20,21 @@ https://www.typescriptlang.org/tsconfig
 ```json
 {
     "compilerOptions": {
-        // "rootDir": "./"
+        // the location of the .ts source files
+        "rootDir": "./",
         "rootDir": "./source",
-        // "rootDir": "./language/source",
+        "rootDir": "./language/source",
 
-        // "rootDirs": []
+        // specify multiple root dirs
+        "rootDirs": [],
 
-        // "outDir": "./"
-        "outDir": "./dist"
-        // "outDir": "./language/dist",
+        // where TSC outputs the compiled files
+        "outDir": "./",
+        "outDir": "./dist",
+        "outDir": "./language/dist",
     },
     // explicitly include and exclude folders
     "include": ["src/**/*"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules"] // node_modules is excluded by default
 }
 ```
