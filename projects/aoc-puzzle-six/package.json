@@ -1,14 +1,14 @@
 {
-  "name": "aoc-2021-ts",
+  "name": "aoc-puzzle-six",
   "version": "1.0.0",
-  "description": "Typescript solutions for AoC 2021",
+  "description": "Typescript solution for AoC 2021 puzzle 06",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/fred-snyder/project-aoc"
+    "url": "github.com/notes-on-typescript/projects/aoc-puzzle-six"
   },
   "author": "Fred Snyder",
   "license": "ISC",
